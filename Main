@@ -1,0 +1,34 @@
+// Hamza Chaudhry, Niloofar Oliaei
+// Dr. Mohammad Kuhail
+// September 27, 2016
+// Project 1B Polynomials
+
+#include "Term.h"
+#include <string>       
+#include <iostream>     
+#include <sstream> 
+#include <list>
+#include "Menu.h"
+
+using namespace std;
+
+int main() {
+	while (true) {
+		 
+		int count = 0; //creates a new menu object
+		while (count < 10) 
+			count++;
+
+		Menu menu = Menu();
+		menu.DisplayMenu();
+		cout << endl << "Would you like to start again?" << endl;
+		cout << "Enter Y/N: ";
+
+		string input;
+		cin >> input;
+		if (input == "N" || input == "n" || input == "no" || input == "No")
+			//if the user enters no then it breaks out of loop, otherwise it continues
+			break;
+	}
+	return 0;
+}
